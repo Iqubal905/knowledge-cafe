@@ -1,0 +1,9 @@
+.cover-img{
+    width: 50%;
+}
+.author-img{
+    width: 20%;
+}
+.container{
+    display: flex;
+}
