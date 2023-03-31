@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import Sidebar from '../Sidebar/Sidebar';
 import './Home.css'
+import { ToastContainer, toast } from 'react-toastify';
 import BookmarksTitle from '../BookmarksTitle/BookmarksTitle';
 const Home = () => {
     const [blogs, setBlogs] =useState([]);
@@ -19,6 +20,10 @@ const Home = () => {
         const sum = parseInt(time) + parseInt(watchTime)
         setTime(sum)
       
+      }
+
+      const handleBoolmarked = () =>{
+        toast('wow so easy!')
       }
    
     useEffect(() => {
@@ -43,15 +48,18 @@ const Home = () => {
              handleBlogTitle = {handleBlogTitle}
             ></Blog>)
            } 
+         
            </div>
            <div className='sidebar-container'>
             <Sidebar time={time}
                       blogLength={blogTitle.length}
-                      blogTitle={blogTitle}
+                    
             ></Sidebar>
-           {
+        <div className='title-container'>
+        {
             blogTitle.map(eachTitle => <BookmarksTitle eachTitle={eachTitle}> </BookmarksTitle>)
            }
+        </div>
        
            </div>
         </div>

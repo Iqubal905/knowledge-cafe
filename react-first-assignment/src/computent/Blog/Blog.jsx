@@ -14,7 +14,7 @@ const Blog = (props) => {
             <div>
                 <img src={cover_img} className="cover-img" alt="" />
             </div>
-            <div className='container'>
+            <div className='blog-under-container'>
              <div className='sub-container'>
              <img src={author_img} className="author-img" alt="" />
              <div>
@@ -22,13 +22,15 @@ const Blog = (props) => {
                 <p>{publish_date}</p>
              </div>
              </div>
-             <div className='sub-container'>
-               <p>{read_time}</p>
-              <button onClick={() => handleBlogTitle(blog_title)}><FontAwesomeIcon icon={faBookmark} /></button>
+             <div className='sub-container-right'>
+               <p>{read_time} min read</p>
+              <button className='bookmark-btn' onClick={() => handleBlogTitle(blog_title)}><FontAwesomeIcon icon={faBookmark} /></button>
              </div>
             </div>
-            <h2>{blog_title}</h2>
-            <button onClick={() =>handleWatchTime(read_time)}>Marks as read</button>
+           <div className='blog-title'>
+           <h2>{blog_title}</h2>
+            <p onClick={() =>handleWatchTime(read_time)}>Marks as read</p>
+           </div>
             
         </div>
     );

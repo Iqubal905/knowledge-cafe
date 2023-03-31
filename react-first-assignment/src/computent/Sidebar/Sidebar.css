@@ -1,0 +1,12 @@
+.sidebar h4{
+    color: blue ;
+    background-color: #cccccc;
+    padding: 20px 0px;
+}
+.sidebar h2{
+    color:black ;
+    background-color: #cccccc;
+    padding: 5px 0px;
+    margin: 0 0 ;
+    font-size: 20px;
+}

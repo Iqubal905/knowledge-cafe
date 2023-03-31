@@ -2,3 +2,25 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+
+.sidebar-container{
+   
+    margin: 0 5%;
+   
+}
+.blog-container{
+    background-color: white;
+    margin: 2%;
+    
+}
+
+.title-container{
+    background-color: #cccccc;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+}
