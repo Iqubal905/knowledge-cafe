@@ -34,8 +34,8 @@ const Home = () => {
            } 
            </div>
            <div className='sidebar-container'>
-            {/* <Sidebar></Sidebar> */}
-            <h4>Spent time on read : {time}</h4>
+            <Sidebar time={time}></Sidebar>
+           
            </div>
         </div>
     );

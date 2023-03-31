@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+   const {time} = props
+   console.log(time);
     return (
         <div>
-            <h4>Spent time on read</h4>
+            <h4>Spent time on read : {time}</h4>
         </div>
     );
 };
