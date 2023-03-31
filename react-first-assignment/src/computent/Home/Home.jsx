@@ -5,8 +5,15 @@ import './Home.css'
 const Home = () => {
     const [blogs, setBlogs] =useState([]);
     const [time, setTime] = useState(0)
+   
+    const [blogTitle, setBlogTitle] = useState([])
 
+    const handleBlogTitle = (title) =>{
+      const newBlogTitle = [...blogTitle, title];
+      setBlogTitle(newBlogTitle);
+     }
 
+    
     const handleWatchTime = (watchTime) =>{
         const sum = parseInt(time) + parseInt(watchTime)
         setTime(sum)
@@ -22,6 +29,8 @@ const Home = () => {
     
    
 
+
+
     return (
         <div className='container'>
            <div className='blog-container'>
@@ -30,12 +39,17 @@ const Home = () => {
               key = {blog.id}
               blog = {blog}
               handleWatchTime = {handleWatchTime}
+             handleBlogTitle = {handleBlogTitle}
             ></Blog>)
            } 
            </div>
            <div className='sidebar-container'>
-            <Sidebar time={time}></Sidebar>
+            <Sidebar time={time}
+                      blogLength={blogTitle.length}
+                      blogTitle={blogTitle}
+            ></Sidebar>
            
+       
            </div>
         </div>
     );

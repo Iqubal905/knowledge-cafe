@@ -6,6 +6,9 @@ import './Blog.css'
 const Blog = (props) => {
    const {id, cover_img, author_img, author_name, blog_title, read_time, publish_date} = props.blog
    const handleWatchTime = props.handleWatchTime;
+  const handleBlogTitle = props.handleBlogTitle
+ 
+
     return (
         <div className='blog'>
             <div>
@@ -21,7 +24,7 @@ const Blog = (props) => {
              </div>
              <div className='sub-container'>
                <p>{read_time}</p>
-              <button><FontAwesomeIcon icon={faBookmark} /></button>
+              <button onClick={() => handleBlogTitle(blog_title)}><FontAwesomeIcon icon={faBookmark} /></button>
              </div>
             </div>
             <h2>{blog_title}</h2>
