@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Sidebar = (props) => {
-   const {time, blogLength, blogTitle} = props
+   const {time, blogLength} = props
  
     return (
         <div>
             <h4>Spent time on read : {time}</h4>
            <h2>Bookmarks : {blogLength}</h2>
-           <h4>{blogTitle}</h4>
+         
         </div>
     );
 };

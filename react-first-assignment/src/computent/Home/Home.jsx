@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import Sidebar from '../Sidebar/Sidebar';
 import './Home.css'
+import BookmarksTitle from '../BookmarksTitle/BookmarksTitle';
 const Home = () => {
     const [blogs, setBlogs] =useState([]);
     const [time, setTime] = useState(0)
@@ -48,7 +49,9 @@ const Home = () => {
                       blogLength={blogTitle.length}
                       blogTitle={blogTitle}
             ></Sidebar>
-           
+           {
+            blogTitle.map(eachTitle => <BookmarksTitle eachTitle={eachTitle}> </BookmarksTitle>)
+           }
        
            </div>
         </div>
