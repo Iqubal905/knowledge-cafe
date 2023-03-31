@@ -7,3 +7,6 @@
 .container{
     display: flex;
 }
+.sub-container{
+    display: flex;
+}

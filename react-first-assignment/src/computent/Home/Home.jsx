@@ -4,7 +4,14 @@ import Sidebar from '../Sidebar/Sidebar';
 import './Home.css'
 const Home = () => {
     const [blogs, setBlogs] =useState([]);
-  
+    const [time, setTime] = useState(0)
+
+
+    const handleWatchTime = (watchTime) =>{
+        const sum = parseInt(time) + parseInt(watchTime)
+        setTime(sum)
+      
+      }
    
     useEffect(() => {
         fetch('data.json')
@@ -12,7 +19,9 @@ const Home = () => {
      .then(data => setBlogs(data))
 
     },[])
-     
+    
+   
+
     return (
         <div className='container'>
            <div className='blog-container'>
@@ -20,11 +29,13 @@ const Home = () => {
             blogs.map(blog => <Blog
               key = {blog.id}
               blog = {blog}
+              handleWatchTime = {handleWatchTime}
             ></Blog>)
            } 
            </div>
            <div className='sidebar-container'>
-            <Sidebar></Sidebar>
+            {/* <Sidebar></Sidebar> */}
+            <h4>Spent time on read : {time}</h4>
            </div>
         </div>
     );

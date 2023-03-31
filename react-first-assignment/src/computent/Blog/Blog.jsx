@@ -1,8 +1,10 @@
 import React from 'react';
+
+
 import './Blog.css'
 const Blog = (props) => {
    const {id, cover_img, author_img, author_name, blog_title, read_time, publish_date} = props.blog
-  
+   const handleWatchTime = props.handleWatchTime;
     return (
         <div className='blog'>
             <div>
@@ -18,11 +20,11 @@ const Blog = (props) => {
              </div>
              <div className='sub-container'>
                <p>{read_time}</p>
-
+             
              </div>
             </div>
-            <h1>{blog_title}</h1>
-            <button>Marks as read</button>
+            <h2>{blog_title}</h2>
+            <button onClick={() =>handleWatchTime(read_time)}>Marks as read</button>
             
         </div>
     );

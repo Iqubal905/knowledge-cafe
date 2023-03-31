@@ -4,8 +4,8 @@
       "cover_img": "https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "author_img": "https://media.istockphoto.com/id/1411901679/photo/man-face-studio-portrait-handsome-calm-emotion.jpg?s=1024x1024&w=is&k=20&c=zb3tmNcQa0GspeXNIgGrmoaVdNQtGziXLkHCUdvy5kE=",
       "author_name": "Stanton Obrien",
-      "blog_title": "male",
-      "read_time": "<ReferenceError: time is not defined>",
+      "blog_title": "Information Technology",
+      "read_time": "30",
       "publish_date": "Tue Feb 01 1972 08:08:04 GMT+0600 (Bangladesh Standard Time)"
     },
     {
@@ -13,8 +13,8 @@
       "cover_img": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
       "author_img": "https://media.istockphoto.com/id/1426009596/photo/close-up-portrait-of-a-young-white-bearded-man-in-a-sweater-on-a-beige-background.jpg?s=1024x1024&w=is&k=20&c=y0f0TpMyLRfLUlTEltHWOAAgTVgLrwFDH9qDdsS76F8=",
       "author_name": "Carolina Page",
-      "blog_title": "female",
-      "read_time": "<ReferenceError: time is not defined>",
+      "blog_title": "Beautiful home and life",
+      "read_time": "10",
       "publish_date": "Mon Sep 28 1992 23:30:58 GMT+0600 (Bangladesh Standard Time)"
     },
     {
@@ -22,8 +22,8 @@
       "cover_img": "https://images.unsplash.com/photo-1573155993874-d5d48af862ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       "author_img": "https://media.istockphoto.com/id/1426210383/photo/close-up-portrait-of-a-young-white-bearded-man-in-a-black-t-shirt-on-a-brown-background.jpg?s=1024x1024&w=is&k=20&c=EAZN6TwAn_dWQRqT9hprWxoV1kb40q9_sz1-ZfKnVM8=",
       "author_name": "Melba Todd",
-      "blog_title": "female",
-      "read_time": "<ReferenceError: time is not defined>",
+      "blog_title": "Nature and life",
+      "read_time": "20",
       "publish_date": "Fri May 15 1987 09:17:05 GMT+0600 (Bangladesh Standard Time)"
     },
     {
@@ -31,8 +31,8 @@
       "cover_img": "https://images.unsplash.com/photo-1679996799366-7780298d013e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "author_img": "https://media.istockphoto.com/id/1213234975/photo/portrait-of-man-with-beard-in-suit-without-tie.jpg?s=1024x1024&w=is&k=20&c=Mm6foT9dXNGb954188ltjRhch7GZ1PgDz6Iu0ACOjFE=",
       "author_name": "Lois Cantu",
-      "blog_title": "female",
-      "read_time": "<ReferenceError: time is not defined>",
+      "blog_title": "",
+      "read_time": "15",
       "publish_date": "Fri Dec 28 1984 21:36:42 GMT+0600 (Bangladesh Standard Time)"
     }
   ]
