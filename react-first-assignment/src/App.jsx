@@ -6,15 +6,19 @@ import Header from './computent/Header/Header'
 import Home from './computent/Home/Home'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import BlogForAns from './computent/BlogForAns/BlogForAns'
 function App() {
   const [count, setCount] = useState(0)
   
   return (
     <div className="App">
+      
       <Header></Header>
       <hr />
       <Home></Home>
+      <BlogForAns></BlogForAns>
       <ToastContainer></ToastContainer>
+      
     </div>
   )
 }
