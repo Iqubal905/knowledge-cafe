@@ -1,0 +1,14 @@
+.question-container div{
+    background-color: #161616;
+    color: white;
+    text-align: start;
+   padding: 1%;
+}
+
+.question-container h2{
+    background-color: darkgrey;
+   color: black;
+   text-align: center;
+   padding:1%;
+   
+}
