@@ -9,10 +9,23 @@ const Home = () => {
     const [time, setTime] = useState(0)
    
     const [blogTitle, setBlogTitle] = useState([])
+    const [blogId, setBlogId] = useState([])
 
     const handleBlogTitle = (title) =>{
+       
       const newBlogTitle = [...blogTitle, title];
       setBlogTitle(newBlogTitle);
+
+      const newBlogId = [...blogId, title.id];
+      setBlogId(newBlogId);
+       console.log(blogId);
+       console.log(title.id);
+       const str = blogId.toString()
+      if(str.includes(title.id)){
+       toast('Already Bookmarked')
+      }
+
+   
      }
 
     
@@ -22,9 +35,7 @@ const Home = () => {
       
       }
 
-      const handleBoolmarked = () =>{
-        toast('wow so easy!')
-      }
+      
    
     useEffect(() => {
         fetch('data.json')
@@ -57,11 +68,14 @@ const Home = () => {
             ></Sidebar>
         <div className='title-container'>
         {
-            blogTitle.map(eachTitle => <BookmarksTitle eachTitle={eachTitle}> </BookmarksTitle>)
+            blogTitle.map(eachTitle => <BookmarksTitle 
+              key = {eachTitle.id}
+              eachTitle={eachTitle.blog_title}> </BookmarksTitle>)
            }
         </div>
        
            </div>
+          
         </div>
     );
 };
